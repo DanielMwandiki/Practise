@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,200&family=Inter:wght@300&family=Montserrat:wght@300;400;500&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,800;1,9..144,200&family=Inter:wght@300&family=Montserrat:wght@300&family=Ubuntu&display=swap');
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    /*font-family: 'Fraunces', serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+	height: 100vh;
+    background-color: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+section {
+    
+	height: 600px;
+	width: 800px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); 
+	display: flex;
+	flex-direction: row;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.image , .content {
+   height: 600px;
+   width: 800px;
+}
+
+.image img {
+    	height: 600px;
+}
+
+.content {
+    background-color: var(--White);
+    height: 600px;
+	display: flex;
+	flex-direction: column;
+    padding: 30px 0;
+}
+
+.content h1{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 3px;
+    color: var(--Darkgrayishblue);
+	
+}
+
+.content h2{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 60px;
+	font-size: 42px;
+	font-weight: 700;
+    color: var(--Verydarkblue);
+    font-family: 'Fraunces', serif;
+	
+}
+
+.content p{
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+	font-weight: 700;
+    line-height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Darkgrayishblue);
+	
+}
+
+.price {
+	display: flex;
+	flex-direction: row;
+    margin: 20px;
+}
+
+.price p{
+	font-weight: 800;
+	font-size: 42px;
+	color: var(--Darkcyan);
+    font-family: 'Fraunces', serif;
+}
+
+.strike{
+    margin-left: 10px;
+}
+.strike p{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	color: var(--Darkgrayishblue);
+	
+}
+
+.btn {
+    cursor: pointer;
+	background-color: var(--Darkcyan);
+	color: var(--White);
+	width: 300px;
+	height:60px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.btn:hover {
+    background-color: hsl(159, 75%, 14%);
+    overflow: hidden;
+ }
+
+
+footer {
+    font-weight: 700;
+    font-size: 18px; 
+    text-align: center;
+	padding: 40px
+
+}
+
+footer a{
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+
+/*mobile 768px*/
+
+@media screen and (max-width:768px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    section{
+        height: 800px;
+        width: 370px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .image{
+        height: 400px;
+        width: 370px;
+    }
+
+    .image img {
+        height: 400px;
+        width: 370px;
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: contain;
+     }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 0; 
+        height: 400px;
+        width: 370px;
+
+    }
+
+    .content h1{
+        margin-top: 5px;
+        padding-left: 2px;
+    }
+
+    .content h2{
+        font-size: 38px;
+        padding-left: 2px;
+        padding-right: 4px;
+    }
+
+    .content p{
+        font-weight: 500 ;
+        padding-left: 2px;
+    }
+
+    .price {
+        margin: 2px;
+    }
+
+    .price p{
+        padding-left: 2px;
+        font-weight: 700 ;
+    }
+
+    .strike{
+        padding-left: 2px;
+        
+    }
+    .strike p{
+        padding-left: 2px;
+        
+        font-weight: 400 ;
+        
+    }
+
+    .btn {
+        width: 300px;
+        height: 50px;
+        
+    }
+
+
+    footer {
+        font-weight: 700;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
+
+/*mobile 400px*/
+
+@media screen and (max-width:399px){
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    section{
+        height: 800px;
+        width: 300px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25); 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px;
+        overflow: hidden;
+    }
+    .image{
+        height: 400px;
+        width: 300px;
+    }
+
+    .image img {
+        height: 400px;
+        width: 300px;
+        background-image: url(images/image-product-mobile.jpg);
+        
+     }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 0; 
+        height: 400px;
+        width: 300px;
+
+    }
+
+    .content h1{
+        margin-top: 10px;
+        padding-left: 2px;
+    }
+
+    .content h2{
+        font-size: 28px;
+        padding-left: 2px;
+    }
+
+    .content p{
+        font-weight: 500 ;
+        padding: 2px 0;
+    }
+
+    .price {
+        margin: 2px;
+    }
+
+    .price p{
+        padding-left: 2px;
+        font-weight: 700 ;
+    }
+
+    .strike{
+        padding-left: 2px;
+        
+    }
+    .strike p{
+        padding-left: 2px;
+        
+        font-weight: 400 ;
+        
+    }
+
+    .btn {
+        width: 280px;
+        height: 50px;
+        
+    }
+
+
+    footer {
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
